@@ -3,7 +3,7 @@ import java.io.*;
  * Created by vadim on 24.10.16.
  */
 public class Main {
-    private static String fileName = "good3";
+    private static String fileName = "good6";
     public static void main(String[] args) {
         try {
             InputStream in = new FileInputStream("input/" + fileName + ".in");
