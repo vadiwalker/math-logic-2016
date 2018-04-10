@@ -19,13 +19,15 @@ string folder;
 
 int main(int argc, char* argv[]) {
 
+	setlocale(LC_ALL, "Russian");
+
 	if (argc != 3) {
 		cout << "Введите 2 числа a и b";
 	}
 
-	ifstream Base2("supportFiles/Base2");
-	ifstream Proof1("supportFiles/Proof1");
-	ifstream SimpleProof2("supportFiles/simpleProof2");
+	ifstream Base2("supportFiles/Base");
+	ifstream Proof1("supportFiles/ProofFirst");
+	ifstream SimpleProof2("supportFiles/ProofFirstPart");
 	ifstream ProofSecondPart("supportFiles/ProofSecondPart");
 
 	ofstream fout("output.txt");
@@ -87,6 +89,7 @@ int main(int argc, char* argv[]) {
 			}
 			C += "'";
 		}
+
 		if (c - 1 < b) {
 			for (int i = c - 1; i < b; i++) {
 				B += "'";
